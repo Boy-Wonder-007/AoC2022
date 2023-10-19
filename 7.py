@@ -60,7 +60,6 @@ for x in folderSizes[1]:
 print(total)
 
 spaceNeeded = -(70000000-30000000-folderSizes[1][-1])
-print(spaceNeeded)
 files = []
 fileList = []
 
@@ -69,36 +68,5 @@ for x in range(len(folderSizes[1])):
         fileList.append(folderSizes[1][x])
         files.append(folderSizes[0][x])
     
-print(files, fileList)
 fileList.sort()
 print(fileList)
-##while x < len(folderSizes[0]):
-##    if folderSizes[2][x] > len(nameChain):
-##        nameChain.append(folderSizes[0][x])
-##    else:
-##        while y < len(folderSizes[0]):
-##            if len(nameChain) == folderSizes[2][y] and nameChain[-1] == folderSizes[0][y]:
-##                dirSize = folderSizes[1][y]
-##            y += 1
-##        y = 0
-##        nameChain.pop(len(nameChain)-1)
-##        while y < len(folderSizes[0]):
-##            if len(nameChain) == folderSizes[2][y] and nameChain[-1] == folderSizes[0][y]:
-##                folderSizes[1][y] += dirSize
-##            y += 1
-##        y=0
-##        dirSize = 0
-##        
-##        x -= 1
-##        
-##    dirSize = 0
-##    
-##    x += 1
-##
-##
-##for x in folderSizes[1]:
-##    if x <= 100000:
-##        print(dirSize)
-##        dirSize += x
-##
-##print(dirSize)

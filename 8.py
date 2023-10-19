@@ -7,6 +7,7 @@ lines = f.read().splitlines()
 for y in range(len(lines)):
     lines[y] = list(lines[y])
 
+dupl = copy.deepcopy(lines)
 east = copy.deepcopy(lines)
 west = copy.deepcopy(lines)
 north = copy.deepcopy(lines)
@@ -34,8 +35,6 @@ for y in range(len(west)):
         else:
            south[-x-1][y] = -1
 
-print(lines[0])
-
 for y in range(len(west)):
     for x in range(len(west[y])):
         if type(north[y][x]) == str:
@@ -55,4 +54,9 @@ for y in range(len(lines)):
         if type(lines[y][x]) == str:
             count += 1
 print(count)
-    
+
+countN = countE = countW = countS = 0
+
+for y in range(len(dupl)):
+    for x in range(len(dupl[x]))
+        
